@@ -8,7 +8,7 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 $routes->get('/login', 'LoginController::index');
 $routes->post('/login', 'LoginController::login');
-$routes->get('/dashboard', 'DashboardController::index', ['filter' => 'login']);
+$routes->get('/admin-dashboard', 'AdminController::index', ['filter' => 'login']);
 $routes->get('/inventator-dashboard', 'InventatorController::index', ['filter' => 'login']);
 $routes->get('/user-dashboard', 'UserController::index', ['filter' => 'login']);
 
